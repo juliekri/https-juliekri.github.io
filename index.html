@@ -1,12 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-header">
+        <img class="logo-img" src="images/kraftlagetlogo.png" />
+      </div>
+      <div class="nav-header">
+        <span>HJEM</span>
+
+        <span @click="${this._scrollTo(id)}">OM OSS</span>
+        <span>VI TILBYR</span>
+        <span>KONTAKT OSS</span>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="image" src="images/kraftlaget.jpg" />
+      <div class="text-container">
+        <h1>Fleksible leieløsninger for leietakere</h1>
+        <span
+          >Vi kan tilby moderne og lyse møterom, kontorlokaler og leie av
+          minilager.</span
+        >
+      </div>
+    </div>
+    <div class="product-container">
+      <h1 style="padding-top: 20px; color: #132c4f">VI TILBYR</h1>
+      <div class="products">
+        <div class="products-box">
+          <h1 class="product-header">MØTEROM</h1>
+          <span class="product-span"
+            >Møterommene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
+          >
+          <img class="product-img" src="images/chair.svg" />
+        </div>
+        <div class="products-box">
+          <h1 class="product-header">MINILAGER</h1>
+          <span class="product-span"
+            >Minilagrene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
+          >
+          <img class="product-img" src="images/minilager.svg" />
+        </div>
+        <div class="products-box">
+          <h1 class="product-header">KONTORER</h1>
+          <span class="product-span"
+            >Kontorene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
+          >
+          <img class="product-img" src="images/kontor.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="about-us-container">
+      <h1 style="padding-top: 20px; color: #132c4f; text-align: center">
+        OM OSS
+      </h1>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          width: 80%;
+          align-self: center;
+          gap: 50px;
+        "
+      >
+        <div class="about-img">
+          <img
+            id="kraftlaget-img"
+            alt="Her kommer bilde"
+            src="images/kraftlaget.jpg"
+          />
+        </div>
+        <div class="about-text">
+          <h2 class="product-header" style="font-size: 30px">Kraftlaget</h2>
+          <span style="font-size: 20px; color: #132c4f"
+            >Eiendommen er opprinnelig et gammelt meieri som ble til i starten
+            av 1900-tallet. Solør Kraftlag kjøpte eiendommen og tok den i bruk i
+            1977. I 2017 ble det besluttet å legge ned driften av Eidsiva Energi
+            AS på Flisa. Krikon Invest AS overtok eiendommen 1. februar 2018 og
+            har endret navn til Kraftlaget Eiendom AS 1.oktober 2021.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="product-container">
+      <h1 style="padding-top: 20px; color: #132c4f">MØTEROM</h1>
+      <div class="products">
+        <div class="meeting-room-box" id="meeting-room">
+          <h1 class="product-header" style="color: #81bdd5">MØTEROM FLISA</h1>
+          <span class="product-span"
+            >Antall plasser 22 – 30 personer. <br />Utstyr: Prosjektor og
+            whitebord. <br />
+            Størrelse: 50 m2. <br />
+            Pris: Heldag 1.700,- Halvdag 900,-</span
+          >
+          <img class="meeting-room-img" src="images/flisa.jpg" />
+        </div>
+        <div class="meeting-room-box">
+          <h1 class="product-header" style="color: #81bdd5">MØTEROM SKANSEN</h1>
+          <span class="product-span"
+            >Antall plasser 6 – 8 personer. <br />
+            Utstyr: 49 tommers skjerm og whiteboard.<br />
+            Størrelse: 17 m2.<br />
+            Pris: Heldag 1200,- Halvdag 700,-</span
+          >
+          <img class="meeting-room-img" src="images/skansen.jpg" />
+        </div>
+        <div class="meeting-room-box">
+          <h1 class="product-header" style="color: #81bdd5">MØTEROM HOF</h1>
+          <span class="product-span"
+            >Antall plasser 5 personer.<br />
+            Utstyr: 2 stk. 24 tommers skjerm, enkel skriver og whitebord.<br />
+            Størrelse: 11 m2.<br />
+            Pris: Heldag 900,- Halvdag 500,-</span
+          >
+          <img class="meeting-room-img" src="images/hof.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="contact-button-container">
+      <div class="contact-button">
+        <span style="font-size: 28px; align-self: center">Ta kontakt</span>
+      </div>
+    </div>
+    <div
+      class="product-container"
+      style="
+        background-color: rgba(0, 159, 196, 0.05);
+        margin-top: 40px;
+        height: 900px;
+      "
+    >
+      <h1 style="padding-top: 20px; color: #132c4f">MINILAGER</h1>
+      <div class="products">
+        <div
+          class="meeting-room-box"
+          style="background-color: #f4f4f4"
+          id="meeting-room"
+        >
+          <h1 class="product-header" style="color: #81bdd5">MØTEROM FLISA</h1>
+          <span class="product-span"
+            >Antall plasser 22 – 30 personer. <br />Utstyr: Prosjektor og
+            whitebord. <br />
+            Størrelse: 50 m2. <br />
+            Pris: Heldag 1.700,- Halvdag 900,-</span
+          >
+          <img class="meeting-room-img" src="images/flisa.jpg" />
+        </div>
+        <div class="meeting-room-box" style="background-color: #f4f4f4">
+          <h1 class="product-header" style="color: #81bdd5">MØTEROM SKANSEN</h1>
+          <span class="product-span"
+            >Antall plasser 6 – 8 personer. <br />
+            Utstyr: 49 tommers skjerm og whiteboard.<br />
+            Størrelse: 17 m2.<br />
+            Pris: Heldag 1200,- Halvdag 700,-</span
+          >
+          <img class="meeting-room-img" src="images/skansen.jpg" />
+        </div>
+      </div>
+      <div class="contact-button-container">
+        <div class="contact-button">
+          <span style="font-size: 28px; align-self: center">Ta kontakt</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="office-container">
+      <div class="office-text-container">
+        <h1 style="color: #132c4f">Kontorlokaler</h1>
+        <span style="font-size: 20px"
+          >Vi har flere ledige kontorer så det er best å ta kontakt for en
+          uforpliktende prat. <br />Kontorene er lyse, har friskluftanlegg og
+          bygget er tilknyttet fibernett. Det er ledig for bedrifter med en
+          eller flere ansatte og som deler spiserom med de andre aktørene i
+          huset.<br />
+          Vi er behjelpelig med møblering og innredning av kontorene. <br />
+          <br />Ved spørsmål send en epost til
+          <span style="font-size: 20px; color: #2bbbd3; cursor: pointer"
+            >firmapost@kraftlagetsolor.no</span
+          >
+          Alle priser er ekskl. mva</span
+        >
+      </div>
+    </div>
+
+    <div class="contact-form-container">
+      <h1 style="padding-top: 20px; color: #132c4f">KONTAKT OSS</h1>
+      <div class="contact-form">
+        <vaadin-text-field
+          class="validate"
+          label="Ditt navn"
+          error-message="Navn må fylles ut"
+          value="${''}"
+          required
+        ></vaadin-text-field>
+        <vaadin-email-field
+          class="validate"
+          label="Din e-postadresse"
+          value="${''}"
+          required
+          error-message="E-postadresse må fylles ut"
+        ></vaadin-email-field>
+        <vaadin-text-field
+          class="validate"
+          value="${''}"
+          label="Emne"
+          required
+          error-message="Emne må fylles ut"
+        ></vaadin-text-field>
+        <vaadin-text-area
+          style="padding-bottom: 25px"
+          class="validate"
+          label="Din henvendelse"
+          value="${''}"
+          required
+          error-message="Må fylles ut"
+        ></vaadin-text-area>
+        <div style="display: flex; justify-content: center">
+          <button class="info-btn" @click="${() => this._sendRequest()}">
+            Send inn
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
