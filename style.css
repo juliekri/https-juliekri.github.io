@@ -27,7 +27,7 @@ ul {
 }
 
 .navbar-container ul li a {
-  color: #000;
+  color: #132c4f;
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -75,6 +75,10 @@ ul {
   font-size: 30px;
 }
 
+.logo-footer {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
 .nav-header {
   display: flex;
   gap: 60px;
@@ -84,16 +88,14 @@ ul {
 .image-container {
   display: flex;
   width: 100vw;
-  height: 650px;
-  object-fit: contain;
   position: relative;
-  text-align: center;
 }
 .image {
   width: 100%;
   height: auto;
   filter: blur(1px);
-  opacity: 0.9;
+  opacity: 0.8;
+  border-radius: 10px;
 }
 
 .text-container {
@@ -112,27 +114,35 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f1f5f8;
-  height: 500px;
+  background-color: #f9f9f9;
+  height: 550px;
 }
-.products {
+.products-meeting {
   gap: 50px;
   display: flex;
+  position: absolute;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .products-box {
-  width: 250px;
-  height: 350px;
-  background-color: #fff;
-  border: 1px solid #c0c0c029;
-  box-shadow: 0px 0px 1px 0px #8080805c;
-  border-radius: 6px;
+  width: 25%;
+  height: 80%;
+  align-items: center;
   text-align: center;
-  gap: 10%;
-  transition: transform 0.2s;
   display: flex;
   flex-direction: column;
+  border: 1px solid #55c3dd;
+  border-radius: 10px;
+  margin-top: 40px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .products-box:hover {
@@ -140,22 +150,32 @@ ul {
 }
 
 .product-img {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 74%;
   align-self: center;
 }
 
+.product-img-box {
+  width: 90px;
+  height: 60px;
+  background-color: #55c3dd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
 .product-header {
-  font-size: 20px;
-  color: #01bcd4;
-  padding-top: 10px;
+  font-size: 22px;
   text-align: center;
+  padding-top: 20px;
+  color: #132c4f;
 }
 
 .product-span {
   width: 80%;
-  font-size: 16px;
-  color: #132c4f;
+  font-size: 18px;
+  color: #677fa0;
   padding-left: 36px;
   line-height: 1.3;
 }
@@ -186,7 +206,7 @@ ul {
   height: 250px;
   position: relative;
   margin: 36px 0px 0px -120px;
-  background-color: #80c0d5;
+  background-color: #7dd1e5;
   border-radius: 15px;
   width: 45%;
   display: flex;
@@ -203,17 +223,26 @@ ul {
 }
 
 .meeting-room-box {
-  width: 350px;
-  height: 500px;
   background-color: #fff;
-  border: 1px solid #c0c0c029;
   box-shadow: 1px 1px 3px 0px #8080805c;
   border-radius: 6px;
-  gap: 15px;
-  transition: transform 0.2s;
+  position: relative;
+  top: -20px;
+  width: 327px;
+  height: 246px;
+  left: 10px;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+}
+
+.minilager {
+  background-color: #f4f4f4;
+  height: 410px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 327px;
 }
 
 .meeting-room-container {
@@ -221,15 +250,22 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f1f5f8;
-  height: 600px;
+  background-color: #f9f9f9;
+  height: 684px;
 }
 
 .meeting-room-img {
-  width: 80%;
-  height: 38%;
+  width: 350px;
   align-self: center;
   border-radius: 10px;
+}
+
+.img-container-main {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  gap: 33px;
+  justify-content: center;
 }
 
 .meeting-room-btn {
@@ -246,19 +282,18 @@ ul {
   height: 100px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
 }
 .contact-button {
   background-color: rgba(5, 170, 208, 0.66);
-  width: 300px;
-  height: 60px;
+  width: 240px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-self: center;
   cursor: pointer;
   border-radius: 10px;
   color: #ffffffe6;
-  box-shadow: 2px 1px 5px #00353e5e;
+  box-shadow: 0px 0px 1px #00353e5e;
   transition: transform 0.2s;
 }
 
@@ -271,6 +306,7 @@ ul {
   height: 250px;
   display: flex;
   justify-content: center;
+  background-color: #f9f9f9;
 }
 .office-text-container {
   text-align: center;
@@ -278,9 +314,8 @@ ul {
 }
 
 .contact-form-container {
-  margin-top: 40px;
   width: 100%;
-  height: 600px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,16 +339,23 @@ ul {
   border: 1px solid #33bcdb;
 }
 
-.info-btn {
+.submit-button {
   height: 35px;
   width: 190px;
   border: none;
   border-radius: 6px;
-  background-color: #c2dee8;
+  background-color: rgba(5, 170, 208, 0.66);
   color: #eeeff1;
   font-size: 18px;
   cursor: pointer;
 }
+
+.submit-button:disabled {
+  background-color: #c2dee8;
+  color: #eeeff1;
+  cursor: not-allowed;
+}
+
 .logo-img {
   width: 300px;
 }

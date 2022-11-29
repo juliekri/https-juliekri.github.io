@@ -46,36 +46,71 @@
     </div>
     <div id="we-offer"></div>
     <div class="product-container">
-      <h1 style="padding-top: 20px; color: #132c4f">VI TILBYR</h1>
+      <h1 style="color: #132c4f">VI TILBYR</h1>
+      <span
+        style="
+          color: #677fa0;
+          font-size: 18px;
+          text-align: center;
+          line-height: 1.5;
+        "
+        >Vi kan tilby ledige moderne og lyse møte- og kursrom med kapasitet fra
+        4 til 30 personer. Vi har fortsatt igjen ledige kontorplasser, både
+        <br />
+        enkeltkontorer og som kontorlandskap hvis det er ønskelig. I <br />
+        kjelleretasjen er det muligheter for å leie minilager på 5 m2 eller 10
+        m2 . Her er det mulighet for større enheter hvis det ønskes. Vi har også
+        <br />
+        lagerhaller av forskjellige slag til utleie. Her er det mange muligheter
+        så dere er velkomne til en hyggelig prat med deres ønsker.</span
+      >
       <div class="products">
-        <div class="products-box" onclick="window.scrollTo(0, 1600)">
+        <div
+          class="products-box"
+          id="scroll-to-meeting-room"
+          onclick="scrollToId(event)"
+        >
           <h1 class="product-header">MØTEROM</h1>
           <span class="product-span"
-            >Møterommene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
-          >
-          <img class="product-img" src="images/chair.svg" />
+            >Møterom ligger i Kraftlagets lokaler i 2. etasje, ta kontakt for
+            bestilling.
+          </span>
+          <div class="product-img-box">
+            <img class="product-img" src="images/chair.svg" />
+          </div>
         </div>
-        <div class="products-box" onclick="window.scrollTo(0, 2400)">
+        <div
+          class="products-box"
+          id="scroll-to-minilager"
+          onclick="scrollToId(event)"
+        >
           <h1 class="product-header">MINILAGER</h1>
           <span class="product-span"
-            >Minilagrene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
-          >
-          <img class="product-img" src="images/minilager.svg" />
+            >Minilagerne ligger i Kraftlagets lokaler, og består av minilager på
+            5 – 10 m2.
+          </span>
+          <div class="product-img-box">
+            <img class="product-img" src="images/minilager.svg" />
+          </div>
         </div>
-        <div class="products-box" onclick="window.scrollTo(0, 3000)">
+        <div
+          class="products-box"
+          id="scroll-to-office"
+          onclick="scrollToId(event)"
+        >
           <h1 class="product-header">KONTORER</h1>
           <span class="product-span"
-            >Kontorene ligger i Kraftlagets lokaler, nært Flisa sentrum.</span
+            >Kontorer til leie. Ta kontakt for mer informasjon.</span
           >
-          <img class="product-img" src="images/kontor.svg" />
+          <div class="product-img-box">
+            <img class="product-img" src="images/kontor.svg" />
+          </div>
         </div>
       </div>
     </div>
     <div id="about-us"></div>
     <div class="about-us-container">
-      <h1 style="padding-top: 20px; color: #132c4f; text-align: center">
-        OM OSS
-      </h1>
+      <h1 style="color: #132c4f; text-align: center">OM OSS</h1>
       <div
         style="
           display: flex;
@@ -83,6 +118,7 @@
           width: 80%;
           align-self: center;
           gap: 50px;
+          margin-top: 20px;
         "
       >
         <div class="about-img">
@@ -109,99 +145,117 @@
         </div>
       </div>
     </div>
-    <div class="meeting-room-container" id="meeting-room">
-      <h1 style="padding-top: 20px; color: #132c4f">MØTEROM</h1>
+    <div class="meeting-room-container" id="meeting-room-container">
+      <h1 style="color: #132c4f">MØTEROM</h1>
       <div class="products">
-        <div class="meeting-room-box" id="meeting-room">
-          <h1 class="product-header" style="color: #55c3dd">MØTEROM FLISA</h1>
-          <span class="product-span"
-            ><span style="font-size: 20px">Antall plasser:</span> 22 – 30
-            personer. <br />
-            <span style="font-size: 20px">Utstyr:</span> Prosjektor og
-            whitebord. <br />
-            <span style="font-size: 20px">Størrelse:</span>Størrelse: 50 m2.
-            <br />
-            <span style="font-size: 20px">Pris:</span> Heldag 1.700,- Halvdag
-            900,-</span
-          >
+        <div id="flisa">
           <img class="meeting-room-img" src="images/flisa.jpg" />
+          <div class="meeting-room-box" id="meeting-room">
+            <h1 class="product-header" style="color: #55c3dd">MØTEROM FLISA</h1>
+            <span class="product-span"
+              ><span style="font-size: 20px; color: #55c3dd"
+                >Antall plasser:</span
+              >
+              22 – 30 personer. <br />
+              <span style="font-size: 20px; color: #55c3dd">Utstyr:</span>
+              Prosjektor og whitebord. <br />
+              <span style="font-size: 20px; color: #55c3dd">Størrelse:</span
+              >Størrelse: 50 m2.
+              <br />
+              <span style="font-size: 20px; color: #55c3dd">Pris:</span> Heldag
+              1.700,- Halvdag 900,-</span
+            >
+          </div>
         </div>
-        <div class="meeting-room-box">
-          <h1 class="product-header" style="color: #55c3dd">MØTEROM SKANSEN</h1>
-          <span class="product-span">
-            <span style="font-size: 20px">Antall plasser:</span> 6 - 8 personer.
-            <br />
-            <span style="font-size: 20px">Utstyr:</span> 49 tommers skjerm og
-            whitebord. <br />
-            <span style="font-size: 20px">Størrelse:</span>Størrelse: 17 m2.
-            <br />
-            <span style="font-size: 20px">Pris:</span> Heldag 1.200,- Halvdag
-            700,-</span
-          >
+        <div id="skansen">
           <img class="meeting-room-img" src="images/skansen.jpg" />
+          <div class="meeting-room-box">
+            <h1 class="product-header" style="color: #55c3dd">
+              MØTEROM SKANSEN
+            </h1>
+            <span class="product-span">
+              <span style="font-size: 20px; color: #55c3dd"
+                >Antall plasser:</span
+              >
+              6 - 8 personer.
+              <br />
+              <span style="font-size: 20px; color: #55c3dd">Utstyr:</span> 49
+              tommers skjerm og whitebord. <br />
+              <span style="font-size: 20px; color: #55c3dd">Størrelse:</span
+              >Størrelse: 17 m2.
+              <br />
+              <span style="font-size: 20px; color: #55c3dd">Pris:</span> Heldag
+              1.200,- Halvdag 700,-</span
+            >
+          </div>
         </div>
-        <div class="meeting-room-box">
-          <h1 class="product-header" style="color: #55c3dd">MØTEROM HOF</h1>
-          <span class="product-span">
-            <span style="font-size: 20px">Antall plasser:</span> 5 personer.
-            <br />
-            <span style="font-size: 20px">Utstyr:</span> 2 stk. 24 tommers
-            skjerm, enkel skriver og whitebord. <br />
-            <span style="font-size: 20px">Størrelse:</span>Størrelse: 11 m2.
-            <br />
-            <span style="font-size: 20px">Pris:</span> Heldag 900,- Halvdag
-            500,-</span
-          >
+        <div id="hof">
           <img class="meeting-room-img" src="images/hof.jpg" />
+          <div class="meeting-room-box">
+            <h1 class="product-header" style="color: #55c3dd">MØTEROM HOF</h1>
+            <span class="product-span">
+              <span style="font-size: 20px; color: #55c3dd"
+                >Antall plasser:</span
+              >
+              5 personer.
+              <br />
+              <span style="font-size: 20px; color: #55c3dd">Utstyr:</span> 2
+              stk. 24 tommers skjerm, enkel skriver og whitebord. <br />
+              <span style="font-size: 20px; color: #55c3dd">Størrelse:</span
+              >Størrelse: 11 m2.
+              <br />
+              <span style="font-size: 20px; color: #55c3dd">Pris:</span> Heldag
+              900,- Halvdag 500,-</span
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <div class="contact-button-container">
       <div class="contact-button" onclick="contactForm()">
-        <span style="font-size: 28px; align-self: center">Ta kontakt</span>
+        <span style="font-size: 26px; align-self: center">Ta kontakt</span>
       </div>
     </div>
+
     <div
       class="product-container"
-      style="background-color: #fff; margin-top: 40px; height: 700px"
+      style="background-color: #fff; height: 644px"
     >
-      <h1 style="padding-top: 20px; color: #132c4f">MINILAGER</h1>
+      <h1 style="color: #132c4f">MINILAGER</h1>
       <div class="products">
         <div
-          class="meeting-room-box"
-          style="background-color: #f4f4f4; height: 450px"
+          class="minilager"
+          style="background-color: #f4f4f4; height: 400px"
           id="minilager"
         >
           <h1 class="product-header" style="color: #55c3dd">MØTEROM FLISA</h1>
+
           <span class="product-span"
-            ><span style="font-size: 20px">Antall plasser:</span> 22 – 30
-            personer. <br />
-            <span style="font-size: 20px">Utstyr:</span> Prosjektor og
-            whitebord. <br />
-            <span style="font-size: 20px">Størrelse:</span>Størrelse: 50 m2.
-            <br />
-            <span style="font-size: 20px">Pris:</span> Heldag 1.700,- eller
-            Halvdag 900,-</span
-          >
-          <img class="meeting-room-img" src="images/flisa.jpg" />
+            >Antall plasser 6 – 8 personer. <br />
+            Utstyr: 49 tommers skjerm og whiteboard.<br />
+            Størrelse: 17 m2.
+          </span>
+          <img
+            class="meeting-room-img"
+            style="width: 300px"
+            src="images/flisa.jpg"
+          />
         </div>
-        <div
-          class="meeting-room-box"
-          style="background-color: #f4f4f4; height: 450px"
-        >
+        <div class="minilager" style="background-color: #f4f4f4; height: 400px">
           <h1 class="product-header" style="color: #55c3dd">MØTEROM SKANSEN</h1>
           <span class="product-span"
             >Antall plasser 6 – 8 personer. <br />
             Utstyr: 49 tommers skjerm og whiteboard.<br />
-            Størrelse: 17 m2.<br />
-            Pris: Heldag 1200,- Halvdag 700,-</span
-          >
-          <img class="meeting-room-img" src="images/skansen.jpg" />
+            Størrelse: 17 m2.
+          </span>
+          <img
+            class="meeting-room-img"
+            style="width: 300px"
+            src="images/skansen.jpg"
+          />
         </div>
       </div>
       <div class="contact-button-container">
-        <div class="contact-button">
-          <span style="font-size: 28px; align-self: center">Ta kontakt</span>
+        <div class="contact-button" onclick="contactForm()">
+          <span style="font-size: 26px; align-self: center">Ta kontakt</span>
         </div>
       </div>
     </div>
@@ -209,7 +263,7 @@
     <div class="office-container" id="office">
       <div class="office-text-container">
         <h1 style="color: #132c4f">Kontorlokaler</h1>
-        <span style="font-size: 20px"
+        <span style="font-size: 20px; color: #677fa0"
           >Vi har flere ledige kontorer så det er best å ta kontakt for en
           uforpliktende prat. <br />Kontorene er lyse, har friskluftanlegg og
           bygget er tilknyttet fibernett. Det er ledig for bedrifter med en
@@ -229,45 +283,64 @@
       <form class="contact-form" name="form">
         <h1 style="color: #132c4f">KONTAKT OSS</h1>
         <input
+          onchange="stateHandle()"
           type="text"
-          class="validate"
+          class="input"
           placeholder="Navn"
           label="Ditt navn"
-          value=""
+          name="name"
           required
         />
         <input
+          onchange="stateHandle()"
           placeholder="E-post"
           type="email"
-          class="validate"
+          class="input"
           label="Din e-postadresse"
-          value=""
+          name="mail"
           required
         />
         <input
+          onchange="stateHandle()"
           type="text"
-          class="validate"
+          class="input"
           placeholder="Emne"
           label="Emne"
-          value=""
+          name="subject"
           required
         />
         <input
+          onchange="stateHandle()"
           type="text"
           style="padding: 20px 0px 20px 10px"
           placeholder="Hva lurer du på?"
-          class="validate"
+          class="input"
           label="Din henvendelse"
-          value=""
+          name="text"
           required
         />
         <div style="padding: 20px; display: flex; justify-content: center">
-          <button class="info-btn" onclick="validateFields(event)">
-            Send inn
-          </button>
+          <button class="submit-button" onclick="submit()">Send inn</button>
         </div>
       </form>
     </div>
+    <footer>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #212330;
+          height: 166px;
+        "
+      >
+        <div class="logo-footer">
+          <img class="logo-img" src="images/logo2.png" />
+        </div>
+        <span style="font-size: 18px; color: #fefefe"><i>Midt i Solør</i></span>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
